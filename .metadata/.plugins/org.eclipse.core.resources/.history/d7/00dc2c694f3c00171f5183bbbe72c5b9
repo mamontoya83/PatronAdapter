@@ -1,0 +1,11 @@
+package app;
+
+import adapter.MotorComun;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		MotorComun motorComun = new MotorComun();
+	}
+
+}

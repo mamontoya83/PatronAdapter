@@ -1,0 +1,23 @@
+package adapter;
+
+public class MotorComun implements Motor{
+
+	@Override
+	public void encender() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void acelarar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void apagar() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

@@ -1,0 +1,25 @@
+package adapter;
+
+public class MotorAdapter implements Motor{
+	MotorModerno motor;
+	
+	public MotorAdapter(MotorModerno motor) {
+		this.motor = motor;
+	}
+	
+	@Override
+	public void encender() {
+		
+	}
+
+	@Override
+	public void acelarar() {
+
+	}
+
+	@Override
+	public void apagar() {
+		
+	}
+	
+}
