@@ -3,28 +3,28 @@ package adapter;
 public class MotorElectrico implements MotorModerno{
 
 	@Override
-	public void conectar() {
-		System.out.println("Conectar");
+	public String conectar() {
+		return "Conectar";
 	}
 
 	@Override
-	public void activar() {
-		System.out.println("Activar");		
+	public String activar() {
+		return "Activar";		
 	}
 
 	@Override
-	public void moverMasRapido() {
-		System.out.println("Mover mas rapido");		
+	public String moverMasRapido() {
+		return "Mover mas rapido";		
 	}
 
 	@Override
-	public void detener() {
-		System.out.println("Detener");		
+	public String detener() {
+		return "Detener";		
 	}
 
 	@Override
-	public void desconectar() {
-		System.out.println("Desconectar");		
+	public String desconectar() {
+		return "Desconectar";		
 	}
 
 }

@@ -3,20 +3,18 @@ package adapter;
 public class MotorEconomico implements Motor{
 
 	@Override
-	public void encender() {
-		System.out.println("Encender");
-		
+	public String encender() {
+		return "Encender";
 	}
 
 	@Override
-	public void acelarar() {
-		System.out.println("Acelerar");		
+	public String acelarar() {
+		return "Acelerar";		
 	}
 
 	@Override
-	public void apagar() {
-		System.out.println("Apagar");
-		
+	public String apagar() {
+		return "Apagar";
 	}
 	
 }
