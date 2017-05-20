@@ -1,0 +1,20 @@
+package app;
+
+import adapter.Motor;
+import adapter.MotorAdapter;
+import adapter.MotorComun;
+import adapter.MotorEconomico;
+import adapter.MotorElectrico;
+
+public class Principal {
+
+	
+	
+	public static void print(Motor motor){
+		System.out.println("################# Motor Electrico ################# ");
+		motor.encender();
+		motor.acelarar();
+		motor.apagar();
+	}
+
+}

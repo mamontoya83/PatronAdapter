@@ -1,7 +1,7 @@
 package adapter;
 
 public interface Motor {
-	public void encender();
-	public void acelarar();
-	public void apagar();
+	public String encender();
+	public String acelarar();
+	public String apagar(); 
 }

@@ -5,23 +5,21 @@ public class MotorAdapter implements Motor{
 	
 	public MotorAdapter(MotorModerno motor) {
 		this.motor = motor;
-	}
+	} 
 	
 	@Override
-	public void encender() {
-		this.motor.conectar();
-		this.motor.activar();
+	public String encender() {
+		return this.motor.conectar() + " y " + this.motor.activar();
 	}
 
 	@Override
-	public void acelarar() {
-		this.motor.moverMasRapido();
+	public String acelarar() {
+		return this.motor.moverMasRapido();
 	}
 
 	@Override
-	public void apagar() {
-		this.motor.detener();
-		this.motor.desconectar();
+	public String apagar() {
+		return this.motor.detener() + " y " + this.motor.desconectar();
 	}
 	
 }

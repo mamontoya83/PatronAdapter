@@ -1,0 +1,31 @@
+package app;
+
+import adapter.Motor;
+import adapter.MotorAdapter;
+import adapter.MotorComun;
+import adapter.MotorEconomico;
+import adapter.MotorElectrico;
+
+public class Principal {
+	
+	public static int preguntarFormato(){
+		Scanner s = new Scanner(System.in);
+		System.out.println(
+				"MENU DE OPCIONES\n"
+				+ "0. Importar la informacion en formato CSV\n"
+				+ "1. Importar la informacion en formato JSON\n"
+				+ "2. Importar la informacion en formato TXT\n"
+				+ "3. Importar la informacion en formato XML\n"
+				+ "4. Salir"
+				);
+		return Integer.parseInt(s.nextLine());
+	}
+	
+	public void print(Motor motor){
+		System.out.println("################# Motor Electrico ################# ");
+		motor.encender();
+		motor.acelarar();
+		motor.apagar();
+	}
+
+}

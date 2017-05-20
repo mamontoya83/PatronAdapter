@@ -1,0 +1,53 @@
+package app;
+
+import java.util.Scanner;
+
+public class Main {
+public static void main(String[] args) {
+	do {
+		int o = preguntarFormato();
+		switch (o) {
+		case 0:
+			usarFormato(new CSVFactory(), principal.getBaseDeDatos());
+			break;
+		case 1:
+			usarFormato(new JSONFactory(), principal.baseDeDatos);
+			break;
+		case 2:
+			usarFormato(new TXTFactory(), principal.baseDeDatos);
+			break;
+		case 3:
+			usarFormato(new XMLFactory(), principal.baseDeDatos);
+			break;
+		case 4:
+			System.out.println("Sistema Terminado");
+			System.exit(0);
+			break;
+		default:
+			System.out.println("Indico una opción no válida");
+			break;
+		}
+	} while (0 != 4);
+	
+	
+//		Motor motor1 = new MotorComun();
+//		Motor motor2 = new MotorEconomico();
+//		Motor motor3 = new MotorAdapter(new MotorElectrico());
+//		
+//		print(motor1);
+//		print(motor2);
+//		print(motor3);	
+	}
+
+	public static int menu(){
+		Scanner s = new Scanner(System.in);
+		System.out.println(
+				"MENU DE OPCIONES\n"
+						+ "1. Motor Comun\n"
+						+ "2. Motor Economico\n"
+						+ "3. Motor Electrico\n"
+						+ "4. Salir"
+				);
+		return Integer.parseInt(s.nextLine());
+	}
+}

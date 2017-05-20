@@ -1,0 +1,15 @@
+package app;
+
+import adapter.Motor;
+import adapter.MotorAdapter;
+import adapter.MotorComun;
+import adapter.MotorEconomico;
+import adapter.MotorElectrico;
+
+public class Principal {
+	
+	
+	
+	
+
+}

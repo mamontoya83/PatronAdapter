@@ -1,0 +1,30 @@
+package app;
+
+import adapter.Motor;
+import adapter.MotorAdapter;
+import adapter.MotorComun;
+import adapter.MotorEconomico;
+import adapter.MotorElectrico;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Motor motor1 = new MotorComun();
+		Motor motor2 = new MotorEconomico();
+		Motor motor3 = new MotorAdapter(new MotorElectrico());
+		
+		print(motor1);
+		print(motor2);
+		print(motor3);
+		
+		
+	}
+	
+	public static void print(Motor motor){
+		System.out.println("################# Motor Electrico ################# ");
+		motor.encender();
+		motor.acelarar();
+		motor.apagar();
+	}
+
+}
